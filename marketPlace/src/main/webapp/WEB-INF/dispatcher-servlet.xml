@@ -15,6 +15,7 @@
    ">
    
    <context:component-scan base-package="marketPlaceFront.marketPlace.controller"/>
+   <context:component-scan base-package="marketPlaceFront.marketBackend.daoimpl"/>
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

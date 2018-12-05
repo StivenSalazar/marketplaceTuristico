@@ -17,8 +17,8 @@ $(function (){
 			$('#encuesta').addClass('active');
 			break;
 			
-		//default:
-			//$('#home').addClass('active');
-			//break;
+		default:
+			$('#home').addClass('active');
+			break;
 	}
 });

@@ -18,7 +18,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MP - MarketPlaceTurístico - ${titulo}</title>
+    <title>MarketPlace - ${titulo}</title>
     
     <script>
     	window.menu = '${titulo}';
@@ -27,25 +27,21 @@
     <!-- Bootstrap core CSS -->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Tema Externo -->
-    <link href="${css}/bootstrap-readable-theme2.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="${css}/app.css" rel="stylesheet">
+
+	<!-- Tema Externo -->
+    <link href="${css}/bootswatch-theme-Minty.css" rel="stylesheet">
     
   </head>
 
   <body>
-
-	<!--  <div class="wrapper">-->
 	
-		<!-- Navigation -->
+		 <!-- Navigation -->
 		<%@include file="./shared/navbar.jsp"%>
-
+		
 		<!-- Page Content -->
 
-		<!--  <div class="content">-->
-		
 			<c:if test="${userClickHome == true }">
 				<%@include file="home.jsp"%>
 			</c:if>
@@ -69,19 +65,16 @@
 			<c:if test="${userClickEncuesta == true }">
 				<%@include file="encuesta.jsp"%>
 			</c:if>
-
-		<!-- Content </div>-->
-
+		
 		<!-- Footer -->
-		<%@include file="./shared/footer.jsp"%>>
+		<%@include file="./shared/footer.jsp"%>
+		
 
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.js"></script>
 		<script src="${js}/bootstrap.bundle.min.js"></script>
 
 		<script src="${js}/app.js"></script>
-
-	<!-- Wrapper </div>-->
 
 </body>
 
